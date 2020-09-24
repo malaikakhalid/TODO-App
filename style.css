@@ -1,0 +1,179 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: rgba(0,0,0,0.1);
+    background: linear-gradient(-45deg, #7f1bb4,#970890, #FF8C79,#a210c7, #D44B77,#5816af, #1150af); 
+    background-size: 700% 700%;
+    animation: gradient 7s ease infinite;
+    background-attachment: fixed;
+    padding-bottom: 90px;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+    
+
+.box{
+    position: relative;
+    justify-content: center;
+    margin: 80px auto 0px;
+    width:320px;
+    height: 500px;
+    border: snow 1px solid;
+    border-radius: 15px;
+    background-color: snow;
+    
+}
+img{
+    border-radius:15px 15px 0px 0px;
+    width:318px; 
+    height: 150px; 
+}
+#todo{
+    border: tomato 2px solid;
+    border-radius:15px 45px;
+    margin-top: -5px;
+    position: relative;
+    margin-left:15px;
+    outline: none;
+}
+#todo::placeholder{
+    font-family: cursive;
+    padding-left: 5px;
+    font-size: 14px;
+    
+}
+.btn {
+    width: 40px;
+    background: none;
+    border-radius: 40%;
+    border: #6c4b7e 2px solid;
+}
+.btn i{
+    color: tomato;
+}
+.btn:hover{
+    background-color: snow;
+    border: tomato 2px solid;
+}
+.btn:hover i{
+    color: #581B7A ;
+}
+.btn:active{
+    background-color: snow;
+}
+h1{
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 90px;
+    color: white;
+    font-family: 'Merienda', cursive;
+}
+
+.content{
+    padding: 10px 6px 10px 10px;
+    background-color: snow;
+    height: auto;
+    
+    width:319px;
+    
+    border-radius: 15px;
+    margin-bottom: 100px;
+}
+
+.list{
+    margin-top: 25px;
+    list-style: none;
+    margin-left: -30px;
+    font-family: 'Handlee', cursive;
+    font-weight: bolder;
+    font-size: 18px;
+    
+
+}
+.check{
+    margin-right: 10px;
+    
+}
+.check:checked{
+    box-shadow: 0 0 0 2px tomato;
+    
+}
+.check:checked + label
+{
+    text-decoration: line-through;
+    color: rgb(124, 120, 120);
+
+}
+
+.btn2{
+    background: none;
+    margin-right: 10px;
+    width: 30px;
+    float: right;
+    border:none;
+}
+.btn2 i {
+    font-size: 20px;
+    color:#581B7A ;
+}
+.input2{
+    border-bottom: tomato 2px solid;
+    border-top:none ;
+    border-left: none;
+    border-right:none ;
+    outline: none;
+
+}
+
+@media only screen and (max-width: 480px){
+    .box{
+        width:310px;
+        height: 480px;
+    }
+    img{
+        width:308px; 
+        height: 150px; 
+    }
+    h1{
+       
+        margin-left: 97px;
+        margin-top: 90px;
+        color: white;
+        font-family: 'Merienda', cursive;
+    }
+    .btn i{
+       font-size: 14px;
+    }
+    .btn{
+        width: 35px;
+    }
+    .content{
+        padding: 10px 6px 10px 10px;
+        width:309px;
+    }
+    #todo{
+        margin-left:4px;
+        width: 200px;
+    }
+    .list{
+        margin-top: 23px;
+        list-style: none;
+        margin-left: -30px;
+        font-family: 'Handlee', cursive;
+        font-weight: bolder;
+        font-size: 15px;
+        
+    
+    }
+}
+
+
